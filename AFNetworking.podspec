@@ -10,8 +10,8 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   
   s.public_header_files = 'AFNetworking/AFNetworking.h'
-  s.source_files = 'AFNetworking/AFNetworking.h'
-  
+  s.source_files = 'AFNetworking/AFNetworking.h', 'AFNetworking/PrivacyManifest.xcprivacy'
+
   pch_AF = <<-EOS
 #ifndef TARGET_OS_IOS
   #define TARGET_OS_IOS TARGET_OS_IPHONE
